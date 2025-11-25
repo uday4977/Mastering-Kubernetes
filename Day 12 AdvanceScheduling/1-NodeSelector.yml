@@ -18,7 +18,7 @@ spec:
       - image: kiran2361993/kubegame:v2
         name: kubegame
       nodeSelector:
-        kubernetes.io/hostname: i-00a968443bbbdd1cf
+        kubernetes.io/hostname: i-00a968443bbbdd1cf ->(Worker Node ID -> Get from EC2 instance)
 
 #kubectl get pods -o wide --no-headers |  awk -F"  " '{print $1 $8}'
 
